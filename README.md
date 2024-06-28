@@ -11,7 +11,7 @@ Vault2Swarm is a Node.js application designed to synchronize secrets from HashiC
 - **HashiCorp Vault**
 
 ### Running
-    ```bash
+```bash
     docker run -d \
         -e VAULT_ENDPOINT=https://vault.example.com \
         -e VAULT_TOKEN=myvaulttoken \
@@ -20,7 +20,7 @@ Vault2Swarm is a Node.js application designed to synchronize secrets from HashiC
         -v /var/run/docker.sock:/var/run/docker.sock \
         --name vault2swarm \
         vault2swarm:latest
-    ```
+```
 
 ### Environment Variables
 
