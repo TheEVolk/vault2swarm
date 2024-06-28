@@ -64,7 +64,7 @@ async function processService(service) {
     return;
   }
 
-  service.Spec.TaskTemplate.ContainerSpec.Env = Object.entries(envsObject).map(([k, v]) => `${k}=${v}`);
+  service.Spec.TaskTemplate.ContainerSpec.Env = Object.entries(newEnvs).map(([k, v]) => `${k}=${v}`);
 
   await _service.update({
     version: service.Version.Index,
