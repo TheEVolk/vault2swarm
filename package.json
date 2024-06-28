@@ -1,0 +1,11 @@
+{
+  "name": "vault2swarm",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "dockerode": "^4.0.2",
+    "JSONStream": "^1.3.5",
+    "node-vault": "^0.10.2"
+  }
+}

@@ -1,0 +1,9 @@
+version: "2.2"
+
+services:
+  notifier:
+    build: .
+    env_file: .env
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /Users/a1/.ssh/id_rsa:/Users/a1/.ssh/id_rsa:ro
