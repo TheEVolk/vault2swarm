@@ -1,19 +1,9 @@
 import Docker from 'dockerode';
-import fs from 'fs';
 import { getSecret } from './vault.js';
 
 const INTERVAL = parseInt(process.env.INTERVAL || '60') * 1e3;
 const DOCKER_OPTIONS = process.env.DOCKER_OPTIONS || {};
-
-const docker = new Docker({
-  protocol: 'ssh',
-  host: '37.220.86.249',
-  port: 22,
-  username: 'root',
-  sshOptions: {
-    privateKey: fs.readFileSync('/Users/a1/.ssh/id_rsa'),
-  },
-});
+const docker = new Docker(DOCKER_OPTIONS);
 
 /**
  * @param {string} labelKey 
