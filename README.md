@@ -1,4 +1,5 @@
 # Vault2Swarm
+[![Docker](https://img.shields.io/docker/pulls/theevolk/vault2swarm)](https://hub.docker.com/r/theevolk/vault2swarm)
 
 Vault2Swarm is a Node.js application designed to synchronize secrets from HashiCorp Vault to Docker Swarm services. The application periodically checks for services with specific labels and updates their environment variables with secrets from Vault.
 
