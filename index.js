@@ -78,6 +78,8 @@ async function processServices() {
   for (const service of services) {
     await processService(service);
   }
+
+  clearSecrets();
 }
 
 async function run() {

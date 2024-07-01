@@ -14,6 +14,10 @@ const vault = createVault({
 
 const secrets = new Map();
 
+export function clearSecrets() {
+  secrets.clear();
+}
+
 export async function getSecret(secret) {
   if (secrets.has(secret)) {
     return secrets.get(secret);
